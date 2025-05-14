@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="/storage/emulated/0/Gideão/Projetos/assets/css/calculadora.css">
+</head>
+<body>
+	<section class="ambiente">
+		<div class="cal">
+			<p>
+				<textarea id="vizor" class="vizor" disabled></textarea>
+				<div class="sinais">
+					<button id="mais" class="opr" onclick="creatNumber('+')">+</button>
+					<button id="menos" class="opr" onclick="creatNumber('-')">-</button>
+					<button id="vezes" class="opr" onclick="creatNumber('*')">x</button>
+					<button id="dividir" class="opr" onclick="creatNumber('/')">/</button>
+				</div>
+				<div class="content">
+					<div class="num">
+						<button id="nove" class="f1" onclick="creatNumber('9')">9</button>
+						<button id="oito" class="f1" onclick="creatNumber('8')">8</button>
+						<button id="sete" class="f1" onclick="creatNumber('7')">7</button>
+						<button id="seis"class="f2" onclick="creatNumber('6')">6</button>
+						<button id="cinco" class="f2" onclick="creatNumber('5')">5</button>
+						<button id="quatro" class="f2" onclick="creatNumber('4')">4</button>
+						<button id="tres" class="f3" onclick="creatNumber('3')">3</button>
+						<button id="dois" class="f3" onclick="creatNumber('2')">2</button>
+						<button id="um" class="f3" onclick="creatNumber('1')">1</button>
+						<button id="dblZero" class="f4" onclick="creatNumber('00')">00</button>
+						<button id="zero" class="f4" onclick="creatNumber('0')">0</button>
+						<button id="ponto" class="f4" onclick="creatNumber('.')">.</button>
+					</div>
+					<div class="result">
+						<button id="igual" class="igual" onclick="equal()">=</button>
+					</div>
+				</div>
+				<div class="backspace">
+					<button id="limpar" class="f5" onclick="clean()">c</button>
+					<button id="apagar" class="f5" onclick="backSpace()"><--</button>
+				</div>
+			</p>
+		</div>
+	</section>
+	<script type="text/javascript" src="/storage/emulated/0/Gideão/Projetos/assets/js/calculadora.js"></script>
+</body>
+</html>
